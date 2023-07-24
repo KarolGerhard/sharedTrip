@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.akgs.sharedtrip.controller.HomeFragment"
+        android:label="Shared Trip"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_adicionaDespesasFragment"
+            app:destination="@id/adicionaDespesasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_adicionaPessoasFragment"
+            app:destination="@id/adicionaPessoasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editaRemoveDespesasFragment"
+            app:destination="@id/editaRemoveDespesasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adicionaDespesasFragment"
+        android:name="com.akgs.sharedtrip.controller.AdicionaDespesasFragment"
+        android:label="Informa Despesas"
+        tools:layout="@layout/fragment_adiciona_despesas" >
+
+        <action
+            android:id="@+id/action_adicionaDespesasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editaRemoveDespesasFragment"
+        android:name="com.akgs.sharedtrip.controller.EditaRemoveDespesasFragment"
+        android:label="Editar Despesas"
+        tools:layout="@layout/fragment_edita_remove_despesas" >
+
+        <action
+            android:id="@+id/action_editaRemoveDespesasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/adicionaPessoasFragment"
+        android:name="com.akgs.sharedtrip.controller.PerfilFragment"
+        android:label="Adiciona pessoas"
+        tools:layout="@layout/fragment_perfil" >
+
+        <action
+            android:id="@+id/action_adicionaPessoasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

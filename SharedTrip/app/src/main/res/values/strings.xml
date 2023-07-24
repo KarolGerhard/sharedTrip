@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SharedTrip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="titulo_home">Olá, </string>
+    <string name="subtitulo_home">Acompanhe os gasto da sua viagem</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="titulo_cadastro">Cadastre-se</string>
+    <string name="titulo_login">Bem Vindo</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_nome">Nome Completo</string>
+    <string name="texto_botao_cadastrar">Cadastrar</string>
+    <string name="texto_botao_login">Entrar</string>
+    <string name="texto_tela_cadastro">Não possui conta? Cadastre-se aqui</string>
+    <string name="hint_nome_item">Item</string>
+    <string name="hint_valor">Valor</string>
+    <string name="hint_forma_pagamento">Qual foi a forma de pagamento?</string>
+    <string name="hint_pessoa_pagante">Quem Pagou?</string>
+    <string name="texto_botao_adicionar">Adicionar</string>
+    <string name="texto_botao_atualiza">Atualiza</string>
+    <string name="texto_botao_remove">Remove</string>
+    <string name="texto_botao_voltar">Voltar</string>
+</resources>

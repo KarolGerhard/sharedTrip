@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/adicionaDespesasFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".controller.AdicionaDespesasFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="left"
+            android:text="Adicione uma despesa"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edt_nome_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/hint_nome_item"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/edt_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/hint_valor"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/edt_forma_pagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/hint_forma_pagamento"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+
+        <EditText
+            android:id="@+id/edt_pessoa_pagante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/hint_pessoa_pagante"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/btn_adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/md_theme_light_primary"
+            android:padding="15dp"
+            android:text="@string/texto_botao_adicionar"
+            android:textAllCaps="false"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

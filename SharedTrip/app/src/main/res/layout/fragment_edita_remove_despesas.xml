@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".controller.AdicionaDespesasFragment"
+        android:id="@+id/editaRemoveDespesasFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="left"
+            android:text="Edite uma despesa"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_nome_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nome_item"
+            android:background="@color/md_theme_light_onPrimary"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edt_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_valor"
+            android:background="@color/md_theme_light_onPrimary"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_forma_pagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_forma_pagamento"
+            android:background="@color/md_theme_light_onPrimary"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/edt_pessoa_pagante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pessoa_pagante"
+            android:background="@color/md_theme_light_onPrimary"
+            android:padding="15dp"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_atualiza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/md_theme_light_primary"
+            android:padding="15dp"
+            android:text="@string/texto_botao_atualiza"
+            android:textAllCaps="false"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/md_theme_light_primary"
+            android:padding="15dp"
+            android:text="@string/texto_botao_remove"
+            android:textAllCaps="false"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/md_theme_light_primary"
+            android:padding="15dp"
+            android:text="@string/texto_botao_voltar"
+            android:textAllCaps="false"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
